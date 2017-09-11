@@ -1,0 +1,23 @@
+{
+  "name": "weebpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindelicious/Webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mindelicious/Webpack/issues"
+  },
+  "homepage": "https://github.com/mindelicious/Webpack#readme",
+  "devDependencies": {
+    "webpack": "^3.5.6"
+  }
+}

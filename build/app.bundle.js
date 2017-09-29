@@ -9669,8 +9669,19 @@ var App = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
         _this.state = {
-            data: []
+            data: [{
+                id: 1,
+                text: 'clean room'
+            }, {
+                id: 2,
+                text: 'wash the dishes'
+            }, {
+                id: 3,
+                text: 'feed my cat'
+            }]
         };
+        _this.addTodo = _this.addTodo.bind(_this);
+        _this.removeTodo = _this.removeTodo.bind(_this);
         return _this;
     }
 

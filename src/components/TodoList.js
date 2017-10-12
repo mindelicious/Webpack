@@ -1,14 +1,21 @@
 import React from 'react';
-import Todo from './Todo.js';
 
-const TodoList = (data, remove) => {
-    const List = data.map((Todo) => {
+const Todo = ({todo, remove}) => {
+    return (
+        <li>{todo.text} <button onClick={() => remove(todo.id)}>X</button></li>
+    )
+}
+
+const TodoList = ({data, remove}) => {
+    const List = data.map((todo) => {
         return (
             <Todo todo={todo} key={todo.id} remove={remove} />
         );
     });
     return (
-        {List}
+        <div>
+            {List}
+        </div>
     )
 }
 export default TodoList;

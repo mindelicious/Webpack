@@ -38,7 +38,7 @@ module.exports = {
         filname: 'index.html',
         inject: 'body',
     }),
-    new webpack.optimize.UglifyJsPlugin,
+   // new webpack.optimize.UglifyJsPlugin,
     new OptimizeJsPlugin({
         sourceMap: false
     })

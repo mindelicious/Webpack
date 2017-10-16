@@ -16,7 +16,7 @@ class TodoForm extends React.Component {
         return (
             <div>
                 <input onChange={ (event) => this.inputChangeHandler(event.target.value) } />
-                <button  onClick={ () => this.props.add(this.state.inptuText) }>Add</button>
+                <button  onClick={ () => this.props.add(this.state.inputText) }>Add</button>
             </div>
         )
     }

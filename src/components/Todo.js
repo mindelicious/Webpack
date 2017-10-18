@@ -9,7 +9,7 @@ class Todo extends React.Component {
         return (
             <li>
                 { this.props.item.text }
-                <button onClick={ () => this.props.remove(this.props.item.id)}>X</button>
+                <button class="btn-x" onClick={ () => this.props.remove(this.props.item.id)}>X</button>
             </li>
         )
     }
